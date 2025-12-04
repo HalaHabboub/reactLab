@@ -1,0 +1,13 @@
+.contact-list-container {
+    margin: 20px 0;
+}
+
+.contact-list-container h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-list {
+    padding: 0;
+    max-width: 500px;
+}

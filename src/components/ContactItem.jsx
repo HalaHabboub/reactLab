@@ -1,9 +1,10 @@
 import React from 'react'
+import './css/ContactItem.css'
 
 export default function ContactItem({ person }) {
     return (
-        <div>
-            <li>{person.username} - {person.email}</li>
-        </div>
+        <li className="contact-item">
+            {person.username} - {person.email}
+        </li>
     )
 }

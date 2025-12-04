@@ -10,14 +10,22 @@ function App() {
   const addPerson = (newPerson) => {
     setPeople([...people, newPerson])
   }
-
-
+  const deletePerson = (index) => {
+    setPeople(people.filter((_, i) => i !== index));
+  }
 
   return (
     <>
+      <div className="app-container">
 
-      <ContactForm addPerson={addPerson} />
-      <ContactList people={people} />
+        <h1 className="app-title">Contact Manager</h1>
+        <div className="content-wrapper">
+
+          <ContactForm addPerson={addPerson} />
+
+          <ContactList people={people} onDelete={deletePerson} />
+        </div>
+      </div>
     </>
   )
 }
