@@ -1,9 +1,9 @@
-// import React from 'react'
+import React from 'react'
 
-// export default function ContactItem({ person }) {
-//     return (
-//         <div>
-//             <li>{person.username} - {person.email}</li>
-//         </div>
-//     )
-// }
+export default function ContactItem({ person }) {
+    return (
+        <div>
+            <li>{person.username} - {person.email}</li>
+        </div>
+    )
+}
